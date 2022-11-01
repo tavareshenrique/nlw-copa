@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "prisma:studio": "npx prisma studio"
+    "prisma:studio": "npx prisma studio",
+    "prisma:generate": "npx prisma generate"
   },
   "keywords": [],
   "author": {
@@ -14,6 +15,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "9.1.7",
     "@typescript-eslint/eslint-plugin": "5.41.0",
     "@typescript-eslint/parser": "5.41.0",
     "eslint": "8.26.0",
@@ -26,6 +28,7 @@
     "prettier": "2.7.1",
     "prettier-eslint": "15.0.1",
     "prisma": "4.5.0",
+    "prisma-erd-generator": "1.2.2",
     "tsx": "3.11.0",
     "typescript": "4.8.4"
   },
