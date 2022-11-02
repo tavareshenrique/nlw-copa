@@ -1,0 +1,49 @@
+Arguments: 
+  /Users/henrique.tavares/.nvm/versions/node/v14.18.1/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/henrique.tavares/.npm/_npx/49128/bin:/Users/henrique.tavares/node_modules/.bin:/Users/henrique.tavares/.bun/bin:/Users/henrique.tavares/.nvm/versions/node/v14.18.1/bin:/Users/henrique.tavares/.local/share/zinit/polaris/bin:/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/henrique.tavares/.fig/bin:/Users/henrique.tavares/.local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://repository.getninjas.io/repository/gn-npm/expo: ETIMEDOUT
+      at Timeout._onTimeout (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141550:19)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "mobile",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "dependencies": {
+      "expo": "~46.0.16",
+      "expo-status-bar": "~1.4.0",
+      "react": "18.0.0",
+      "react-native": "0.69.6"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
