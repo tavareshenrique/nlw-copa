@@ -1,12 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+
+import { NativeBaseProvider } from 'native-base';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Pitica ♥️</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider>
+      <View style={styles.container}>
+        <Text>Pitica ♥️</Text>
+        <StatusBar style="auto" />
+      </View>
+    </NativeBaseProvider>
   );
 }
 
