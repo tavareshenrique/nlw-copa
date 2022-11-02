@@ -11,7 +11,7 @@ export const THEME = extendTheme({
       200: '#C4C4CC',
     },
     green: {
-      500: '#047C3F'
+      500: '#047C3F',
     },
     yellow: {
       500: '#F7DD43',
@@ -20,12 +20,12 @@ export const THEME = extendTheme({
     red: {
       500: '#DB4437',
     },
-    white: '#FFFFFF'
+    white: '#FFFFFF',
   },
   fonts: {
     heading: 'Roboto_700Bold',
     body: 'Roboto_400Regular',
-    medium: 'Roboto_500Medium'
+    medium: 'Roboto_500Medium',
   },
   fontSizes: {
     xs: 12,
@@ -35,6 +35,6 @@ export const THEME = extendTheme({
     xl: 24,
   },
   sizes: {
-    14: 56
-  }
+    14: 56,
+  },
 });

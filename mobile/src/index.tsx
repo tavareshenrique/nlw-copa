@@ -1,9 +1,4 @@
-import {
-  useFonts,
-  Roboto_400Regular,
-  Roboto_500Medium,
-  Roboto_700Bold,
-} from '@expo-google-fonts/roboto';
+import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import { Loading } from './components/Loading';
 
@@ -17,10 +12,8 @@ export function Main() {
   });
 
   if (!fontsLoaded) {
-    return <Loading />
+    return <Loading />;
   }
 
-  return (
-    <SignIn />
-  )
+  return <SignIn />;
 }
