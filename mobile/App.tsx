@@ -1,24 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
-import { NativeBaseProvider } from 'native-base';
+import { NativeBaseProvider, Text, Center } from 'native-base';
+
+import { THEME } from './src/styles/theme'
 
 export default function App() {
   return (
-    <NativeBaseProvider>
-      <View style={styles.container}>
-        <Text>Pitica ♥️</Text>
+    <NativeBaseProvider theme={THEME} >
+      <Center flex={1} bgColor="green.500">
+        <Text color="white" fontSize={24}>Pitica ♥️</Text>
         <StatusBar style="auto" />
-      </View>
+      </Center>
     </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
