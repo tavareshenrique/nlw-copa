@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "metro-react-native-babel-transformer": "^0.73.3",
-    "react-native-svg-transformer": "^1.0.0"
-  }
-}
