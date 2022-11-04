@@ -7,7 +7,7 @@ import {
 
 import { Loading } from './components/Loading';
 
-import { New } from './screens/New';
+import { Find } from './screens/Find';
 // import { SignIn } from './screens/SignIn';
 
 export function Main() {
@@ -21,5 +21,5 @@ export function Main() {
     return <Loading />;
   }
 
-  return <New />;
+  return <Find />;
 }
