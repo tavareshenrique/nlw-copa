@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "nlwcopamobile",
-    "slug": "nlwcopamobile",
+    "name": "nlwcopa2022mobile",
+    "slug": "nlwcopa2022mobile",
+    "scheme": "nlwcopa2022mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
