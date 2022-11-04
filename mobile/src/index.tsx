@@ -7,7 +7,8 @@ import {
 
 import { Loading } from './components/Loading';
 
-import { SignIn } from './screens/SignIn';
+import { New } from './screens/New';
+// import { SignIn } from './screens/SignIn';
 
 export function Main() {
   const [fontsLoaded] = useFonts({
@@ -20,5 +21,5 @@ export function Main() {
     return <Loading />;
   }
 
-  return <SignIn />;
+  return <New />;
 }

@@ -12,8 +12,8 @@ export function Input({ ...rest }: IInputProps) {
       color="white"
       placeholderTextColor="gray.300"
       _focus={{
-        bg: "gray.800",
-        borderColor: "gray.600"
+        bg: 'gray.800',
+        borderColor: 'gray.600',
       }}
       {...rest}
     />

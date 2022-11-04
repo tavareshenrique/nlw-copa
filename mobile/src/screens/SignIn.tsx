@@ -3,7 +3,7 @@ import { Fontisto } from '@expo/vector-icons';
 
 import { useAuth } from '../hooks/useAuth';
 
-import Button from '../components/Button';
+import { Button } from '../components';
 
 import Logo from '../assets/logo.svg';
 

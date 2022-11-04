@@ -11,11 +11,11 @@ export interface PoolPros {
   createdAt: string;
   owner: {
     name: string;
-  },
+  };
   participants: ParticipantProps[];
   _count: {
     participants: number;
-  }
+  };
 }
 
 interface Props extends TouchableOpacityProps {

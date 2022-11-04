@@ -8,9 +8,13 @@ export function EmptyPoolList() {
       </Text>
 
       <Pressable>
-          <Text textDecorationLine="underline" color="yellow.500" textDecoration="underline">
-            buscar um por código
-          </Text>
+        <Text
+          textDecorationLine="underline"
+          color="yellow.500"
+          textDecoration="underline"
+        >
+          buscar um por código
+        </Text>
       </Pressable>
 
       <Text color="white" fontSize="sm" textAlign="center" mx={1}>
@@ -18,7 +22,7 @@ export function EmptyPoolList() {
       </Text>
 
       <Pressable>
-        <Text textDecorationLine="underline"  color="yellow.500">
+        <Text textDecorationLine="underline" color="yellow.500">
           criar um novo
         </Text>
       </Pressable>
