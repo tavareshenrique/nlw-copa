@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { useCallback, useEffect, useState } from 'react';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 import { VStack, Icon, useToast, FlatList } from 'native-base';
 
@@ -24,27 +24,29 @@ export function Pools() {
   const { navigate } = useNavigation();
   const toast = useToast();
 
-  useEffect(() => {
-    async function fetchPools() {
-      try {
-        setIsLoading(true);
+  const fetchPools = useCallback(async () => {
+    try {
+      setIsLoading(true);
 
-        const response = await api.get('/pools');
+      const response = await api.get('/pools');
 
-        setPools(response.data.pools);
-      } catch (error) {
-        return toast.show({
-          title: 'Não foi possível carregar os bolões.',
-          placement: 'top',
-          bgColor: 'red.500',
-        });
-      } finally {
-        setIsLoading(false);
-      }
+      setPools(response.data.pools);
+    } catch (error) {
+      return toast.show({
+        title: 'Não foi possível carregar os bolões.',
+        placement: 'top',
+        bgColor: 'red.500',
+      });
+    } finally {
+      setIsLoading(false);
     }
-
-    fetchPools();
   }, [toast]);
+
+  useFocusEffect(
+    useCallback(() => {
+      fetchPools();
+    }, [fetchPools])
+  );
 
   return (
     <VStack flex={1} bgColor="gray.900">
