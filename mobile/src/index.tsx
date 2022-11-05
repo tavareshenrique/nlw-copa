@@ -7,8 +7,7 @@ import {
 
 import { Loading } from './components/Loading';
 
-import { Pools } from './screens/Pools';
-// import { SignIn } from './screens/SignIn';
+import { Routes } from './routes';
 
 export function Main() {
   const [fontsLoaded] = useFonts({
@@ -21,5 +20,5 @@ export function Main() {
     return <Loading />;
   }
 
-  return <Pools />;
+  return <Routes />;
 }
