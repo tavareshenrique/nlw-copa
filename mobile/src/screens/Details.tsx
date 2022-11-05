@@ -13,6 +13,7 @@ import {
   PoolHeader,
   EmptyMyPoolList,
   Option,
+  Guesses,
 } from '../components';
 import { IPoolCardProps } from '../components/PoolCard';
 
@@ -93,6 +94,8 @@ export function Details() {
               isSelected={optionSelected === 'ranking'}
             />
           </HStack>
+
+          <Guesses poolId={poolDetails.id} />
         </VStack>
       ) : (
         <EmptyMyPoolList code={poolDetails.code} />
