@@ -3,6 +3,8 @@ import { FastifyInstance } from 'fastify';
 import ShortUniqueId from 'short-unique-id';
 import { z } from 'zod';
 
+import { authenticate } from '../plugins/authenticate';
+
 import { prisma } from '../lib/prisma';
 
 export async function poolRoutes(fastify: FastifyInstance) {
@@ -52,4 +54,59 @@ export async function poolRoutes(fastify: FastifyInstance) {
 
     return await reply.status(201).send({ title, code });
   });
+
+  fastify.post(
+    '/pools/:id/join',
+    {
+      onRequest: [authenticate]
+    },
+    async (request, reply) => {
+      const joinPoolBody = z.object({
+        code: z.string()
+      });
+
+      const { code } = joinPoolBody.parse(request.body);
+
+      const pool = await prisma.pool.findUnique({
+        where: {
+          code
+        },
+        include: {
+          participants: {
+            where: {
+              userId: request.user.sub
+            }
+          }
+        }
+      });
+
+      if (!pool) {
+        return await reply.status(404).send({ message: 'Pool not found.' });
+      }
+
+      if (pool.participants.length > 0) {
+        return await reply.status(409).send({ message: 'Already joined.' });
+      }
+
+      if (!pool.ownerId) {
+        await prisma.pool.update({
+          where: {
+            id: pool.id
+          },
+          data: {
+            ownerId: request.user.sub
+          }
+        });
+      }
+
+      await prisma.participant.create({
+        data: {
+          poolId: pool.id,
+          userId: request.user.sub
+        }
+      });
+
+      return await reply.status(201).send();
+    }
+  );
 }
