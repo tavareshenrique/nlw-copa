@@ -1,4 +1,10 @@
-import { createContext, ReactNode, useState, useEffect } from 'react';
+import {
+  createContext,
+  ReactNode,
+  useState,
+  useEffect,
+  useCallback,
+} from 'react';
 
 import { EXPO_CLIENT_ID } from '@env';
 
@@ -6,11 +12,14 @@ import * as Google from 'expo-auth-session/providers/google';
 import * as AuthSession from 'expo-auth-session';
 import * as WebBrowser from 'expo-web-browser';
 
+import { api } from '../services/api';
+
 WebBrowser.maybeCompleteAuthSession();
 
 type TUser = {
   name: string;
   avatarUrl: string;
+  isLoggedIn: boolean;
 };
 
 export interface IAuthContextDataProps {
@@ -49,26 +58,52 @@ export function AuthContextProvider({ children }: IAuthContextProviderProps) {
     }
   }
 
-  function signInWithGoogle(access_token: string) {
-    console.log('TOKEN DE AUTH =>', access_token);
-
-    // const response = await fetch(
-    //   `https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${access_token}`,
-    // );
-
-    // const userInfo = await response.json();
-
-    // setUser({
-    //   name: userInfo.name,
-    //   avatarUrl: userInfo.picture,
-    // });
+  function applyTokenInApiHeaders(token: string) {
+    api.defaults.headers.authorization = `Bearer ${token}`;
   }
+
+  async function getUserData() {
+    try {
+      const userInfoResponse = await api.get('/me');
+
+      const { user } = userInfoResponse.data;
+
+      setUser({
+        ...user,
+        isLoggedIn: true,
+      });
+    } catch (error) {
+      console.log(error);
+
+      throw error;
+    }
+  }
+
+  const signInWithGoogle = useCallback(async (access_token: string) => {
+    try {
+      setIsUserLoading(true);
+
+      const tokenResponse = await api.post('/users', { access_token });
+
+      const { token } = tokenResponse.data;
+
+      applyTokenInApiHeaders(token);
+
+      await getUserData();
+    } catch (error) {
+      console.log(error);
+
+      throw error;
+    } finally {
+      setIsUserLoading(false);
+    }
+  }, []);
 
   useEffect(() => {
     if (response?.type === 'success' && response.authentication?.accessToken) {
       signInWithGoogle(response.authentication.accessToken);
     }
-  }, [response]);
+  }, [response, signInWithGoogle]);
 
   return (
     <AuthContext.Provider
