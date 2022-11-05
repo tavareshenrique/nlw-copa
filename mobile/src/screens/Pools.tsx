@@ -32,6 +32,8 @@ export function Pools() {
 
       setPools(response.data.pools);
     } catch (error) {
+      console.log(error);
+
       return toast.show({
         title: 'Não foi possível carregar os bolões.',
         placement: 'top',
@@ -75,7 +77,16 @@ export function Pools() {
         <FlatList
           data={pools}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <PoolCard data={item} />}
+          renderItem={({ item }) => (
+            <PoolCard
+              data={item}
+              onPress={() =>
+                navigate('details', {
+                  id: item.id,
+                })
+              }
+            />
+          )}
           ListEmptyComponent={() => <EmptyPoolList />}
           showsVerticalScrollIndicator={false}
           _contentContainerStyle={{
