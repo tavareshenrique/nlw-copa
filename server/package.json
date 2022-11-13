@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "prisma:studio": "npx prisma studio",
-    "prisma:generate": "npx prisma generate"
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
