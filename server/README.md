@@ -57,6 +57,11 @@ https://github.com/tavareshenrique/nlw-copa.git
 ```
 
 ```bash
+# Acesse a pasta do projeto
+cd server
+```
+
+```bash
 # Certifique que você esteja na última versão 18 do NodeJS (18.12.0)
 # Caso utilize nvm, basta executar o comando abaixo para utilizar a versão 18.12.0 do NodeJS.
 nvm use
@@ -81,7 +86,7 @@ npm run prisma:migrate
 
 ```bash
 # Execute o Projeto.
-nom run dev
+npm run dev
 ```
 
 
