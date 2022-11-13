@@ -68,6 +68,13 @@ npm install
 ```
 
 ```bash
+# Crie as variaveis de ambiente, copiando o arquivo .env.example e renomeando para .env
+
+# Certifique de adicionar valor para as variaveis de ambiente
+cp .env.example .env
+```
+
+```bash
 # Execute as Migrations do Prisma
 npm run prisma:migrate
 ```
