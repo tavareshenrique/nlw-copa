@@ -21,7 +21,7 @@
 
 # :pushpin: Conteúdo
 
-* [Preview](#memo-preview)
+* [Preview](#framed_picture-preview)
 * [Tecnologias](#computer-tecnologias)
 * [Como Executar](#construction_worker-como-executar)
 * [Autor](#computer-autor)
@@ -35,7 +35,7 @@
 </p>
 
 
-# :image: Tecnologias
+# :computer: Tecnologias
 
 Este projeto foi feito utilizando as seguintes tecnologias:
 
