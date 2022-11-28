@@ -88,7 +88,17 @@ npm run prisma:migrate
 # Execute o Projeto.
 npm run dev
 ```
+## :whale: Executando com Docker
 
+```bash
+# Fazendo o build
+docker build -t nlw-copa-server .
+```
+
+```bash
+# Executando
+docker run nlw-copa-server
+```
 
 # :computer: Autores
 
