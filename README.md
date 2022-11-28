@@ -17,7 +17,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-f7dd43">
 </p>
 
-> NLW Copa **Mobile** é um projeto da Rocketseat onde construimos uma aplicação de um Bolão para a Copa do Mundo de 2022. Essa aplicação é responsável por criar os grupos dos bolões, listar os bolões, entrar em um bolão, etc. Utilizando tecnologias como: React para Web, React Native para Mobile e NodeJS para o Server. 🚀 💜
+> **NLW Copa** é um projeto da Rocketseat onde construimos uma aplicação de um **Bolão para a Copa do Mundo de 2022**. Essa aplicação é responsável por criar os grupos dos bolões, listar os bolões, entrar em um bolão, etc. Utilizando tecnologias como: **React** para Web, **React Native** para Mobile e **NodeJS** para o Server. 🚀 💜
 
 # :pushpin: Conteúdo
 
