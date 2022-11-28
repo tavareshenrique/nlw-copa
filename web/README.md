@@ -24,14 +24,14 @@
 * [Preview](#framed_picture-preview)
 * [Tecnologias](#computer-tecnologias)
 * [Como Executar](#construction_worker-como-executar)
-* [Autor](#computer-autor)
+* [Autores](#computer-autores)
 * [Licença](#closed_book-licença)
 
 
 # :framed_picture: Preview
 
 <p align="center">
-    <img alt="ERD" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/web/assets/preview.png" width="800px" />
+    <img alt="Web" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/web/assets/preview.png" width="800px" />
 </p>
 
 
@@ -73,7 +73,7 @@ yarn dev
 ```
 
 
-# :computer: Autor
+# :computer: Autores
 
 <table>
   <tr>

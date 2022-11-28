@@ -17,77 +17,32 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-f7dd43">
 </p>
 
-> NLW Copa **Server** é um projeto da Rocketseat onde construimos uma aplicação de um Bolão para a Copa do Mundo de 2022. Essa aplicação é responsável por registrar os jogos, os bolões e por cadastrar o usuário utilizando oAuth do Google. Utilizando tecnologias como: Fastify, Prisma, Zod e TypeScript. 🚀 💜
+> NLW Copa **Mobile** é um projeto da Rocketseat onde construimos uma aplicação de um Bolão para a Copa do Mundo de 2022. Essa aplicação é responsável por criar os grupos dos bolões, listar os bolões, entrar em um bolão, etc. Utilizando tecnologias como: React para Web, React Native para Mobile e NodeJS para o Server. 🚀 💜
 
 # :pushpin: Conteúdo
 
-* [Diagrama](#memo-diagrama)
-* [Tecnologias](#computer-tecnologias)
-* [Como Executar](#construction_worker-como-executar)
+* [Preview](#framed_picture-preview)
+* [Projetos](#computer-projetos)
 * [Autores](#computer-autores)
 * [Licença](#closed_book-licença)
 
 
-# :memo:	 Diagrama
+# :framed_picture: Preview
 
 <p align="center">
-    <img alt="ERD" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/8ba02fc914bba835e2e8c90358957a0e01a47480/server/prisma/ERD.svg" width="200px" />
+    <img alt="Mobile 1" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.08.34.png" width="200px" />
+    <img alt="Mobile 2" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.08.46.png" width="200px" />
+    <img alt="Mobile 3" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.09.21.png" width="200px" />
+    <img alt="Mobile 4" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.09.26.png" width="200px" />
+    <img alt="Web" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/web/assets/preview.png" width="800px" />
 </p>
 
 
-# :computer: Tecnologias
+# :computer: Projetos
 
-Este projeto foi feito utilizando as seguintes tecnologias:
-
-* [React](https://reactjs.org/)
-* [Typescript](https://www.typescriptlang.org/)
-* [Axios](https://github.com/axios/axios)
-* [Vite](https://github.com/twbs/bootstrap)
-* [clsx](https://github.com/lukeed/clsx)
-* [phosphor-react](https://github.com/phosphor-icons/phosphor-react)
-* [storybook](https://storybook.js.org/)
-* [msw](https://mswjs.io/)
-* [tailwindcss](https://tailwindcss.com/)
-
-# :construction_worker: Como Executar
-
-```bash
-# Clone o Repositório
-https://github.com/tavareshenrique/nlw-copa.git
-```
-
-```bash
-# Acesse a pasta do projeto
-cd server
-```
-
-```bash
-# Certifique que você esteja na última versão 18 do NodeJS (18.12.0)
-# Caso utilize nvm, basta executar o comando abaixo para utilizar a versão 18.12.0 do NodeJS.
-nvm use
-```
-
-```bash
-# Instale as Dependências
-npm install
-```
-
-```bash
-# Crie as variaveis de ambiente, copiando o arquivo .env.example e renomeando para .env
-
-# Certifique de adicionar valor para as variaveis de ambiente
-cp .env.example .env
-```
-
-```bash
-# Execute as Migrations do Prisma
-npm run prisma:migrate
-```
-
-```bash
-# Execute o Projeto.
-npm run dev
-```
+* [💾 Server](https://github.com/tavareshenrique/nlw-copa/tree/main/server)
+* [🌐 Web](https://github.com/tavareshenrique/nlw-copa/tree/main/web)
+* [📱 Mobile](https://github.com/tavareshenrique/nlw-copa/tree/main/mobile)
 
 
 # :computer: Autores

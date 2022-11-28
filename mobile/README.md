@@ -24,17 +24,17 @@
 * [Preview](#framed_picture-preview)
 * [Tecnologias](#computer-tecnologias)
 * [Como Executar](#construction_worker-como-executar)
-* [Autor](#computer-autor)
+* [Autores](#computer-autores)
 * [Licença](#closed_book-licença)
 
 
 # :framed_picture: Preview
 
 <p align="center">
-    <img alt="ERD" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.08.34.png" width="200px" />
-    <img alt="ERD" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.08.46.png" width="200px" />
-    <img alt="ERD" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.09.21.png" width="200px" />
-    <img alt="ERD" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.09.26.png" width="200px" />
+    <img alt="Mobile 1" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.08.34.png" width="200px" />
+    <img alt="Mobile 2" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.08.46.png" width="200px" />
+    <img alt="Mobile 3" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.09.21.png" width="200px" />
+    <img alt="Mobile 4" src="https://raw.githubusercontent.com/tavareshenrique/nlw-copa/main/mobile/src/assets/previews/Screenshot%202022-11-28%20at%2009.09.26.png" width="200px" />
 </p>
 
 
@@ -79,7 +79,7 @@ yarn start
 ```
 
 
-# :computer: Autor
+# :computer: Autores
 
 <table>
   <tr>
